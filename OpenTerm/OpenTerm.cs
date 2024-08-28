@@ -28,6 +28,11 @@ namespace OpenTerm
             OnContentChanged(value.ToString());
         }
 
+        public void Clear()
+        {
+            buffer = "";
+        }
+
         public override void Write(string value)
         {
             OnContentChanged(value);
